@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Angular Authentication Demo</h1>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="/login">Login</a>
+            </li>
+            <li><a href="/home">Home</a>
+            </li>
+            <li><a href="/profile">Profile</a>
+            </li>
+            <li><span data-app-common-logout></span>
+            </li>
+        </ul>
+    </nav>
+    <div data-ng-view></div>
+
+    <script src="//code.angularjs.org/1.3.0-rc.5/angular.js"></script>
+    <script src="//code.angularjs.org/1.3.0-rc.5/angular-route.js"></script>
+
+    <script src="js/app/app.module.js"></script>
+    
+    <script src="js/app/common/common.module.js"></script>
+    <script src="js/app/common/common.directive.logout.js"></script>
+    
+    <script src="js/app/home/home.module.js"></script>
+    <script src="js/app/home/home.controller.main.js"></script>
+    
+    <script src="js/app/login/login.module.js"></script>
+    <script src="js/app/login/login.controller.main.js"></script>
+    <script src="js/app/login/login.service.authenticate.js"></script>
+    
+    <script src="js/app/profile/profile.module.js"></script>
+    <script src="js/app/profile/profile.controller.main.js"></script>
+</body>
+
+</html>
